@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belleville-Dental-Care</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/fontawesome.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <style>
+        .body {
+            font-size: 1.4rem;
+            padding-left: 2%;
+            padding-right: 5%;
+        }
+
+        .treatment {
+            width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            margin-top: 40px;
+            color: #1c6889;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #e88b21;
+        }
+
+        b {
+            font-size: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        .types-container {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            width: 90%;
+            margin-bottom: 20px;
+        }
+
+        .types-item1 {
+            width: 45%;
+        }
+
+        .types-item2 {
+            width: 50%;
+
+            align-content: center;
+        }
+
+        @media screen and (min-width:1px) and (max-width:1000px) {
+    .body{
+        width: 98%;
+        font-size: 1.2rem;
+    }
+    .types-container{
+        display: block;
+        width: 95%;
+    }
+    .types-item1{
+        display: block;
+        width: 100%;
+    }
+    .types-item2{
+        display: block;
+        width: 100%;
+    }
+    .treatment{
+        width: 95%;
+    }
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+}
+
+@media screen and (min-width:1001px) and  (max-width:1200px){
+    .types-container{
+width: 100%;
+    }
+    .types-item1{
+        width: 45%;
+    }
+    .types-item2{
+        width: 50%;
+    }
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+}
+
+
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./mobile-crop-logo-removebg-preview.png" alt="" width="200px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="padding: 0%; margin-right: 40px;"><i class="bi bi-list" style="font-size: 45px;" ></i>
+          <!-- <span class="navbar-toggler-icon" ></span> -->
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class=" nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0s;" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle animate__animated animate__fadeInLeftBig" style="animation-delay: 0.2s;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Teeth whitening
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./dental implant.html">Dental Implants</a></li>
+                  <li><a class="dropdown-item" href="./dentures.html">Dentures</a></li>
+                  <li><a class="dropdown-item" href="./rootcanaltreatment.html">Root Canal</a></li>
+                  <li><a class="dropdown-item" href="./scaling.html">Scaling</a></li>
+    
+                  <li><a class="dropdown-item" href="./aligners.html">Aligners</a></li>
+                </ul>
+              </li>
+    
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle animate__animated animate__fadeInLeftBig" style="animation-delay: 0.4s;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Patient education
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./dentalproblems.html">Dental problems</a></li>
+                  <li><a class="dropdown-item" href="./research.html">Research & advancement</a></li>
+                  <li><a class="dropdown-item" href="./products.html">Dental products</a></li>
+                </ul>
+              </li>
+    
+    
+    
+             
+              <li class="nav-item">
+                <a class="nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0.6s;" href="about.html">About us</a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link animate__animated animate__fadeInLeftBig" style="animation-delay: 0.8s;" href="contact.html">Contact us</a>
+              </li>
+            </ul>
+    
+          </div>
+        </div>
+      </nav>
+    <a href="./contact.html" class="btn btn-danger booking-advertising">Book an appointment</a>
+
+    
+    <div class="body">
+        <h1 class="animate__animated animate__fadeInDown">Teeth Whitening Treatment</h1>
+
+        <div class="types-container">
+            <div class="types-item1">
+                <p>Teeth whitening treatment is a dental procedure that helps transform discolored or stained teeth into
+                    stunning white, bright teeth by utilizing teeth whitening technology, the LED Light System, and
+                    high-quality
+                    bleaching products to stimulate the disintegration of the whitening gel, which help turn discolored
+                    teeth
+                    into white, bright, and natural-looking teeth. The treatment restores the teeth to a pearly white,
+                    shining
+                    condition and helps a treated person regain confidence with a sunny smile. </p>
+
+            </div>
+            <div class="types-item2 animate__animated animate__fadeIn">
+                <img src="./teeth-whitening-pic.jfif" alt="" width="80%">
+            </div>
+
+        </div>
+
+
+        <iframe width="" height="" src="https://www.youtube.com/embed/IE1P9O3myWw?si=X-F584nnftCA2ES9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+        <div class="treatment">
+            <h2>What causes teeth to turn yellow, black, or discolored?</h2>
+            <p>Yellow, black, dark, or brown teeth stains are due to two main factors:</p>
+            <ol>
+                <li><b>Foods and beverages contain chemicals,</b> such as pre-chromogens, chromogens, or tannin, such as
+                    tea, coffee, red wine, soft drinks, and specific dark-colored fruit and vegetable juices. These will
+                    attack the teeth and bind to the white tooth enamel, causing yellow, black, or brown staining and
+                    making
+                    teeth appear darker.</li>
+
+                <li><b>Tar or nicotine in cigarettes: </b>Smoking is a primary cause of yellow teeth, black teeth, or
+                    dark
+                    teeth. The toxins in cigarettes will bind to the outer layer of teeth and become ingrained, causing
+                    the
+                    teeth to darken quickly. Smoking also causes a buildup of plaque, which is the principal contributor
+                    to
+                    gum disease, tooth decay, periodontal gum disease, and many other dental ailments.</li>
+
+                <li><b>Aging: </b>Our tooth enamel naturally thins with aging, allowing pigment from food and beverages
+                    to
+                    become more easily embedded in the enamel. As a result, the teeth turn yellow, brown, or darker.
+                </li>
+
+
+                <li><b>Gum and tooth injuries that darken the color of the teeth:</b> When the gums and teeth are
+                    injured,
+                    the body reacts by producing a thicker layer of dentin to protect the original dentin from
+                    destruction.
+                    However, it can also darken the color of the teeth. Additionally, injuries to the gums and teeth can
+                    also cause blood to seep into the teeth, changing the color of the teeth.</li>
+
+                <li><b>Certain medications</b> such as asthma or blood pressure medications, as well as some antibiotics
+                    used by mothers while pregnant, such as tetracycline or doxycycline, as well as when infants or
+                    young
+                    children are given antibiotics during the teething period or excessive fluoride exposure, can cause
+                    teeth to darken when they grow up. In addition, those undergoing treatment for certain diseases,
+                    such as
+                    cancer, may experience tooth darkening as a side effect of cancer treatment.</li>
+            </ol>
+            <h2>How many types of teeth whitening treatment?</h2>
+        </div>
+        <ol>
+            <div class="types-container">
+                <div class="types-item1">
+
+                    <li>
+
+                        <p>
+                            <b>Philips Zoom teeth whitening products (hospital- or clinic-based)</b> are a tooth
+                            whitening
+                            procedure
+                            that uses a high-performance tooth whitening gel containing hydrogen peroxide in combination
+                            with energy
+                            wave stimulation. Shining an adjustable blue LED light spanning three intensity levels on
+                            the
+                            teeth
+                            helps to break up the dull stains and reveal noticeably whiter teeth right after the
+                            procedure
+                            without
+                            harming the tooth enamel. The outcome is dependent on the state of each individual's teeth.
+                        </p>
+                </div>
+
+                <div class="types-item2">
+                    <img src="./zoom whitening.jpg" alt="" height="%" width="100%">
+                </div>
+                </li>
+
+            </div>
+
+            <div class="types-container">
+                <div class="types-item1">
+                    <li><b>Home bleaching (Philips Zoom products),</b> or at-home teeth whitening, is the procedure of
+                        bleaching your teeth at home using a tooth whitening kit that includes trays and teeth whitening
+                        gel.
+                        The
+                        dentist will make a mouth impression at the hospital to make teeth whitening trays and give the
+                        initial
+                        teeth whitening, then dispense an at-home teeth-whitening kit for continuing teeth whitening at
+                        home.
+                        At-home teeth whitening is a convenient way to whiten teeth, suitable for those who do not have
+                        time
+                        or
+                        those who want to increase the level of whiteness to a satisfactory level.</li>
+                </div>
+                <div class="types-item2">
+                    <img src="./home whitening.jpg" alt=""  width="100%">
+                </div>
+                </li>
+            </div>
+
+        </ol>
+
+        <div class="treatment">
+            <h2>What is the procedure for Zoom Teeth Whitening treatment?</h2>
+            <ol>
+                <li>The dentist will diagnose the oral cavity and the condition of the teeth to compare the shade of the
+                    teeth
+                    before starting the teeth-whitening process. If limestone is present, the dentist will remove the
+                    tartar,
+                    polish the teeth, or fill any cavity before bleaching for the teeth-whitening gel to work at peak
+                    efficiency.</li>
+                <li>The dentist applies the cheek, tongue, lips, and gum barrier, as well as a protective gel on the
+                    gums
+                    and
+                    surrounding tissues to prevent the whitening gel from contacting the buccal and gum tissues inside
+                    the
+                    mouth
+                    and wears special blue light-blocking glasses to protect eyesight while performing the teeth
+                    whitening
+                    procedure.</li>
+                <li>The dentist will use a blow-dry tool to dry the teeth, then apply the teeth whitening gel to bleach
+                    the
+                    teeth.</li>
+                <li>The dentist uses the Zoom device's WhiteSpeed blue LED light to stimulate the gel polish to dissolve
+                    and
+                    penetrate through the enamel layer to remove stains and turn the yellow, brown, or dull black dentin
+                    into a
+                    whiter shade of teeth.</li>
+                <li>The dentist will coat the teeth-whitening gel and repeat the light for 3–4 rounds, each session
+                    spaced
+                    approximately 15 minutes apart. The teeth-whitening process takes about 45 minutes to an hour,
+                    depending
+                    on
+                    the condition of each individual's teeth. After the last session, the dentist will apply a special
+                    fluoride
+                    coating to the teeth to help reduce tooth sensitivity.</li>
+                <li>When the teeth-whitening process is complete, the dentist will suck out the whitening gel and wipe
+                    to
+                    clean
+                    the teeth, gums, tongue, and mouth area. Then, assess the outcome by comparing the teeth colors
+                    before
+                    and
+                    after teeth whitening to discern the improvement in whiter, brighter teeth.</li>
+            </ol>
+            <h2>What is the Home Bleaching and Teeth Whitening procedure?</h2>
+            <ol>
+                <li>The dentist performs a thorough oral examination, including the oral cavity and teeth. An oral
+                    clearance
+                    may
+                    be required if limestone is detected. The dentist will remove the tartar, polish the teeth, or
+                    perform
+                    dental fillings to prepare the teeth surface for bleaching.</li>
+                <li>The dentist will take an impression of the mouth for making trays for home teeth whitening.</li>
+                <li>After receiving the teeth whitening tray, the dentist will fit it to the teeth and gums to check if
+                    they
+                    all
+                    fit snugly.</li>
+                <li>The dentist will demonstrate how to use the teeth whitening kit, clean and store the equipment.</li>
+                <li>Teeth whitening or self-whitening at home involves squeezing the right number of teeth whitening gel
+                    as
+                    specified by the dentist onto the teeth whitening tray. Then, apply the whitening tray over the
+                    teeth
+                    and
+                    leave for 30 minutes (depending on the whitening gel concentration).</li>
+                <li>If sensitive teeth are detected, temporarily avoid using toothpaste with a high fluoride
+                    concentration
+                    for a
+                    short while.</li>
+                <div class=" text-center"><a href="./contact.html" class="btn btn-danger">Book an appointment</a></div>
+            </ol>
+        </div>
+    </div>
+
+
+    
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start mt-5 " >
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block ">
+        <span class="fs-4 ">Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com/people/Belleville-Dental-Care/100063752242326/" class="me-4 text-reset">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://twitter.com/blvldentalcare" class="me-4 text-reset">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="https://youtube.com/@bellevilledental6238?si=HCi8TJewUEh0ATSs" class="me-4 text-reset">
+          <i class="bi bi-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/bellevilledentalcare/" class="me-4 text-reset">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/belleville-dental-care/?originalSubdomain=ca" class="me-4 text-reset">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4 text-center">
+              <img src="./mobile-crop-logo-removebg-preview.png" alt="" width="250rem">
+            </h6>
+            <p>
+              Belleville Dental clinic focuses on patient education to prevent disease and provide different treatment
+              options
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h3>
+            <p class="address-link">
+              <a href="./about.html" class="text-reset text-decoration-none">About us</a>
+            </p>
+            <p class="address-link">
+              <a href="contact.html" class="text-reset text-decoration-none">Contact us</a>
+            </p>
+            <p class="address-link">
+              <a href="./dentalproblems.html" class="text-reset text-decoration-none">Dental problems</a>
+            </p>
+            <p>
+              <a href="./contact.html" class="btn btn-danger">Get appointment</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 width-timings">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">
+              Clinic Timings
+            </h3>
+            <p class="text-reset">Monday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Tuesday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Wednesday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Thursday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Friday: 4pm to 9pm</a>
+            </p>
+            <p class="text-reset">Saturday: 12pm to 9pm</a>
+            </p>
+            <p class="text-reset">Sunday: Off</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h3 class="text-uppercase fw-bold mb-4">Queries</h3>
+            <p class="address-link "> 
+              <a href="https://maps.app.goo.gl/D7GeryVNwbbqEcbW7" class="text-decoration-none text-reset"> <i class="fas fa-home me-3"></i>13 Shop No.7, Yousuf Arcade SC-13 Block "L" North Nazimabad Karachi, SC,
+              Karachi, Pakistan</a>
+            </p>
+            <p class="address-link">
+              <a href="mailto:bellville dental" class="text-decoration-none text-reset ">
+                <i class="fas fa-envelope me-3"></i>
+                askbelleviledental@gmail.com</a>
+            </p>
+            <p><i class="fas fa-phone me-3"></i> +92 3151095674</p>
+            <p><i class="fas fa-print me-3"></i> + 021 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      Copyright©2024 ownwards all rights reserved
+    
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+
+</body>
+
+</html>
